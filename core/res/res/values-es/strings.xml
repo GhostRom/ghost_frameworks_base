@@ -1480,25 +1480,18 @@
     <string name="profileGroupEmail">Email</string>
     <string name="profileGroupSMS">SMS</string>
     <string name="wildcardProfile">Otro</string>
-    <string name="reboot_system" product="tablet">Reiniciar tablet</string>
-    <string name="reboot_system" product="default">Reiniciar teléfono</string>
-    <string name="global_action_screenshot">Captura de pantalla</string>
     <string name="global_actions_toggle_expanded_desktop_mode">Escritorio extendido</string>
     <string name="global_actions_expanded_desktop_mode_on_status">Activado</string>
     <string name="global_actions_expanded_desktop_mode_off_status">Desactivado</string>
-    <string name="reboot_reboot">Reiniciar</string>
     <string name="reboot_recovery">Modo Recovery</string>
     <string name="reboot_bootloader">Modo Bootloader</string>
     <string name="reboot_bootmenu">Modo Bootmenu</string>
     <string name="reboot_fastboot">Modo Fastboot</string>
     <string name="reboot_download">Modo Download</string>
-    <string name="reboot_progress">Reiniciando\u2026</string>
-    <string name="reboot_confirm">El terminal se reiniciará</string>
     <string name="permlab_preventpower">anular tecla encendido</string>
     <string name="permdesc_preventpower">Permite que una aplicación cambie el comportamiento de la tecla de encendido.</string>
     <string name="lockscreen_discharging">Descargando, <xliff:g id="number">%d</xliff:g><xliff:g id="percent">%%</xliff:g></string>
     <string name="app_killed_message">Aplicación finalizada</string>
-    <string name="global_action_reboot">Reiniciar</string>
     <string name="global_action_choose_profile">Perfil</string>
     <string name="permlab_fm_radio_receiver">controlar receptor FM</string>
     <string name="permdesc_fm_radio_receiver">Permite que una aplicación controle el receptor FM.</string>
