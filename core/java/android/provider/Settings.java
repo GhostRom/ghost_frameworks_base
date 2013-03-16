@@ -2881,12 +2881,6 @@ public final class Settings {
         public static final String STATUS_ICON_COLOR = "status_icon_color";
 
         /**
-         * Statusbar State
-         * @hide
-         */
-        public static final String EXPANDED_DESKTOP_STATE = "expanded_desktop_state";
-
-        /**
          * Restart Launcher
          * @hide
          */
@@ -3253,26 +3247,12 @@ public final class Settings {
             "navigation_ring_targets_2",
         };
 
-	/**
-         * Defines the shortcuts to be shown on lockscreen
-         * Usage is like this: target:icon|target:icon|target:icon
-         * if :icon is not set, default application icon will be used
-         * @hide
-         */
-        public static final String LOCKSCREEN_TARGETS = "lockscreen_targets";
-
         /**
          * Allows to define the limit notifcations once per X seconds
          * The value is a an integer in milliseconds.
          * @hide
          */
         public static final String NOTIFICATION_SOUND_LIMITER_THRESHOLD = "notification_sound_limiter_threshold";
-
-        /**
-         * Show the pending notification counts as overlays on the status bar
-         * @hide
-         */
-        public static final String STATUS_BAR_NOTIF_COUNT = "status_bar_notif_count";
 
         /**
          * Show the notification ticker (or not)
@@ -3309,143 +3289,6 @@ public final class Settings {
          * @hide
          */
         public static final String QUICK_SETTINGS = "quick_settings";
-
-        /**
-         * Quick Settings Panel Dynamic Tiles
-         *
-         * @hide
-         */
-        public static final String QS_DYNAMIC_ALARM = "qs_dyanmic_alarm";
-
-        /**
-         * Quick Settings Panel Dynamic Tiles
-         *
-         * @hide
-         */
-        public static final String QS_DYNAMIC_BUGREPORT = "qs_dyanmic_bugreport";
-
-        /**
-         * Quick Settings Panel Dynamic Tiles
-         *
-         * @hide
-         */
-        public static final String QS_DYNAMIC_IME = "qs_dyanmic_ime";
-
-        /**
-         * Quick Settings Panel Dynamic Tiles
-         *
-         * @hide
-         */
-        public static final String QS_DYNAMIC_USBTETHER = "qs_dyanmic_usbtether";
-
-        /**
-         * Quick Settings Panel Dynamic Tiles
-         *
-         * @hide
-         */
-        public static final String QS_DYNAMIC_WIFI = "qs_dyanmic_wifi";
-
-        /**
-         * Quick Settings Quick Pulldown
-         *
-         * @hide
-         */
-        public static final String QS_QUICK_PULLDOWN = "qs_quick_pulldown";
-
-        /**
-         * Quick Settings Collapse Pane
-         *
-         * @hide
-         */
-        public static final String QS_COLLAPSE_PANEL = "qs_collapse_panel";
-
-        /**
-         * Use the Notification Power Widget? (Who wouldn't!)
-         *
-         * @hide
-         */
-        public static final String EXPANDED_VIEW_WIDGET = "expanded_view_widget";
-
-        /**
-         * Whether to hide the notification screen after clicking on a widget
-         * button
-         *
-         * @hide
-         */
-        public static final String EXPANDED_HIDE_ONCHANGE = "expanded_hide_onchange";
-
-        /**
-         * Hide scroll bar in power widget
-         *
-         * @hide
-         */
-        public static final String EXPANDED_HIDE_SCROLLBAR = "expanded_hide_scrollbar";
-
-        /**
-         * Haptic feedback in power widget
-         *
-         * @hide
-         */
-        public static final String EXPANDED_HAPTIC_FEEDBACK = "expanded_haptic_feedback";
-
-        /**
-         * Widget Buttons to Use
-         *
-         * @hide
-         */
-        public static final String WIDGET_BUTTONS = "expanded_widget_buttons";
-
-        /**
-         * Widget Buttons to Use - Tablet
-         *
-         * @hide
-         */
-        public static final String WIDGET_BUTTONS_TABLET = "expanded_widget_buttons_tablet";
-
-        /**
-        * Notification Power Widget - Custom Brightness Mode
-        * @hide
-        */
-        public static final String EXPANDED_BRIGHTNESS_MODE = "expanded_brightness_mode";
-
-        /**
-        * Notification Power Widget - Custom Network Mode
-        * @hide
-        */
-        public static final String EXPANDED_NETWORK_MODE = "expanded_network_mode";
-
-        /**
-        * Notification Power Widget - Custom Screen Timeout
-        * @hide
-        */
-        public static final String EXPANDED_SCREENTIMEOUT_MODE = "expanded_screentimeout_mode";
-
-        /**
-        * Notification Power Widget - Custom Ring Mode
-        * @hide
-        */
-        public static final String EXPANDED_RING_MODE = "expanded_ring_mode";
-
-        /**
-        * Notification Power Widget - Custom Torch Mode
-        * @hide
-        */
-        public static final String EXPANDED_FLASH_MODE = "expanded_flash_mode";
-
-        /**
-         * Weather to minimize lockscreen challenge on screen turned on
-         * @hide
-         */
-        public static final String LOCKSCREEN_MAXIMIZE_WIDGETS = "lockscreen_maximize_widgets";
-
-        /**
-         * Volume keys control cursor in text fields (default is 0)
-         * 0 - Disabled
-         * 1 - Volume up/down moves cursor left/right
-         * 2 - Volume up/down moves cursor right/left
-         * @hide
-         */
-        public static final String VOLUME_KEY_CURSOR_CONTROL = "volume_key_cursor_control";
 
         /**
          * Settings to backup. This is here so that it's in the same place as the settings
@@ -3783,13 +3626,6 @@ public final class Settings {
         @Deprecated
         public static final String WIFI_WATCHDOG_PING_TIMEOUT_MS =
             Secure.WIFI_WATCHDOG_PING_TIMEOUT_MS;
-
-        /**
-         * toggle to "fix" the following: (found in NotificationManagerService)
-         *  new in 4.2: if there was supposed to be a sound and we're in vibrate mode,
-         *  we always vibrate, even if no vibration was specified
-         */
-        public static final String NOTIFICATION_CONVERT_SOUND_TO_VIBRATION = "convert_sound_to_vibration";
 
     }
 
@@ -5341,12 +5177,6 @@ public final class Settings {
          * @hide
          */
         public static final String ADVANCED_REBOOT = "advanced_reboot";
-
-	/**
-         * Whether the Wimax should be on.  Only the WiMAX service should touch this.
-         * @hide
-         */
-        public static final String WIMAX_ON = "wimax_on";
 
         /**
          * This are the settings to be backed up.

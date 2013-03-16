@@ -111,15 +111,10 @@ public class BatteryManager {
      */
     public static final String EXTRA_INVALID_CHARGER = "invalid_charger";
 
-    // Dock intents
-    /** @hide **/
-    public static final String EXTRA_DOCK_STATUS = "dock_status";
     /** @hide **/
     public static final String EXTRA_DOCK_HEALTH = "dock_health";
     /** @hide **/
     public static final String EXTRA_DOCK_PRESENT = "dock_present";
-    /** @hide **/
-    public static final String EXTRA_DOCK_LEVEL = "dock_level";
     /** @hide **/
     public static final String EXTRA_DOCK_SCALE = "dock_scale";
     /** @hide **/
