@@ -3595,24 +3595,8 @@ public class AudioService extends IAudioService.Stub implements OnFinished {
                 } else if (uri.equals(Settings.System.getUriFor(Settings.System.SAFE_HEADSET_VOLUME))) {
                     mSafeVolumeEnabled = safeVolumeEnabled(mContentResolver);
                 }
-                if (ringerModeAffectedStreams != mRingerModeAffectedStreams) {
-                    /*
-                     * Ensure all stream types that should be affected by ringer mode
-                     * are in the proper state.
-                     */
-                    mRingerModeAffectedStreams = ringerModeAffectedStreams;
-                    setRingerModeInt(getRingerMode(), false);
-                }
-                readDockAudioSettings(mContentResolver);
+	    }
 
-                mLinkNotificationWithVolume = Settings.System.getInt(mContentResolver,
-                        Settings.System.VOLUME_LINK_NOTIFICATION, 1) == 1;
-                if (mLinkNotificationWithVolume) {
-                    mStreamVolumeAlias[AudioSystem.STREAM_NOTIFICATION] = AudioSystem.STREAM_RING;
-                } else {
-                    mStreamVolumeAlias[AudioSystem.STREAM_NOTIFICATION] = AudioSystem.STREAM_NOTIFICATION;
-                }
-            }
         }
     }
 
